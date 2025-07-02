@@ -1,0 +1,29 @@
+{
+  "name": "clorbit",
+  "version": "1.0.0",
+  "description": "배포를 위한 mcp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node src/cli.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NamMinwu/clorbit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NamMinwu/clorbit/issues"
+  },
+  "homepage": "https://github.com/NamMinwu/clorbit#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.13.3"
+  }
+}
