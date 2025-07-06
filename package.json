@@ -24,6 +24,7 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@aws-sdk/client-ec2": "^3.842.0",
     "@modelcontextprotocol/sdk": "^1.13.3"
   }
 }
