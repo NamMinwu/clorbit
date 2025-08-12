@@ -1,4 +1,4 @@
-import { DockerfileOptions } from "./types";
+import { DockerfileOptions } from "./types.js";
 
 export function generateDockerfile({
   baseImage,

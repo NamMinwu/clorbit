@@ -2,7 +2,7 @@ import { z } from "zod";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { promises as fs } from "fs";
 import path from "path";
-import { generateDockerfile } from "./builder";
+import { generateDockerfile } from "./builder.js";
 
 export function dockerfileTool(server: McpServer) {
   server.tool(
