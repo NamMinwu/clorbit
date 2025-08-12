@@ -8,6 +8,11 @@ import { setEc2Settings } from "./tools/set-ec2/index.js";
 import { listKeyPairsTool } from "./tools/list-keypairs/index.js";
 import { listSecurityGroupsTool } from "./tools/list-security-groups/index.js";
 import { generateSecurityGroupTool } from "./tools/generate-security-group/index.js";
+import { fileWriteTool } from "./tools/file-writer/index.js";
+import { execTool } from "./tools/exec/index.js";
+import { templateGenerateTool } from "./tools/template-generate/index.js";
+import { sshExecTool } from "./tools/ssh-exec/index.js";
+import { fileReadTool } from "./tools/file-read/index.js";
 
 // ⬇ 너의 툴들 import
 
@@ -26,6 +31,12 @@ async function main() {
   listKeyPairsTool(server);
   listSecurityGroupsTool(server);
   generateSecurityGroupTool(server);
+  // ai agent가 알아서 할 수 있도록 하는 tool
+  fileWriteTool(server);
+  execTool(server);
+  templateGenerateTool(server);
+  sshExecTool(server);
+  fileReadTool(server);
 
   // STDIO Transport로 연결 (포트 필요 없음)
   const transport = new StdioServerTransport();

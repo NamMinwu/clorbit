@@ -4,18 +4,18 @@
   "description": "배포를 위한 MCP 서버 (STDIO/CLI)",
   "private": false,
   "type": "module",
-  "main": "dist/cli.js",
-  "types": "dist/cli.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "bin": {
-    "cloufia-mcp": "dist/cli.js"
+    "cloufia-mcp": "dist/index.js"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "dev": "ts-node src/cli.ts",
+    "dev": "ts-node src/index.ts",
     "build": "tsc -p tsconfig.json",
-    "start:stdio": "node dist/cli.js",
+    "start:stdio": "node dist/index.js",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -35,11 +35,13 @@
   "dependencies": {
     "@aws-sdk/client-ec2": "^3.842.0",
     "@modelcontextprotocol/sdk": "^1.13.3",
-    "zod": "^3.23.8",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "ssh2": "^1.16.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20.14.10",
+    "@types/ssh2": "^1.15.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   }
