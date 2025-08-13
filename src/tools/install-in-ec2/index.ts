@@ -4,7 +4,8 @@ import { execSync } from "child_process";
 
 export function setInstallInEc2(server: McpServer) {
   server.tool(
-    "setEc2Setting",
+    "installInEc2",
+    "EC2 인스턴스에 Java, Docker 등 필수 소프트웨어를 설치합니다",
     {
       sshKeyPath: z.string(), // EC2에 접근할 SSH 키
       user: z.string().default("ec2-user"),

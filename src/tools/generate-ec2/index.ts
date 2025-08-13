@@ -23,6 +23,7 @@ export function awsConfigureCommand({
 export function ec2Tool(server: McpServer) {
   server.tool(
     "generateEc2Command",
+    "EC2 인스턴스를 생성하는 AWS 명령어를 생성합니다",
     {
       amiId: z.string().optional,
       instanceType: z.string().optional,
@@ -83,6 +84,7 @@ export function ec2Tool(server: McpServer) {
   // awsConfigureCommand 툴 등록 (유지)
   server.tool(
     "awsConfigureCommand",
+    "AWS CLI 자격 증명을 설정하는 명령어를 생성합니다",
     {
       accessKeyId: z.string(),
       secretAccessKey: z.string(),

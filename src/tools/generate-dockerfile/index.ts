@@ -7,6 +7,7 @@ import { generateDockerfile } from "./builder";
 export function dockerfileTool(server: McpServer) {
   server.tool(
     "generateDockerfile",
+    "애플리케이션을 위한 Dockerfile을 생성합니다",
     {
       baseImage: z.string(),
       appDir: z.string(),

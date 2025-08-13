@@ -9,6 +9,7 @@ import {
 export function listSecurityGroupsTool(server: McpServer) {
   server.tool(
     "listSecurityGroups",
+    "AWS EC2 보안 그룹 목록을 조회합니다",
     {
       region: z.string().optional(),
     },

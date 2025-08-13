@@ -5,6 +5,7 @@ import { EC2Client, CreateSecurityGroupCommand } from "@aws-sdk/client-ec2";
 export function generateSecurityGroupTool(server: McpServer) {
   server.tool(
     "generateSecurityGroup",
+    "AWS EC2 보안 그룹을 생성합니다",
     {
       groupName: z.string(),
       description: z.string(),

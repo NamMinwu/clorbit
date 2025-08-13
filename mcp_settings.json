@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "clorbit": {
+      "command": "node",
+      "args": ["dist/index.js"],
+      "cwd": "c:\\WorkSpace_2025\\clorbit"
+    }
+  }
+}

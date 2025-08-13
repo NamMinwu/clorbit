@@ -5,6 +5,7 @@ import { execSync } from "child_process";
 export function setEc2Settings(server: McpServer) {
   server.tool(
     "setEc2Setting",
+    "EC2 인스턴스에 SSH로 접속하여 설정 스크립트를 실행합니다",
     {
       sshKeyPath: z.string(), // EC2에 접근할 SSH 키
       user: z.string().default("ec2-user"),

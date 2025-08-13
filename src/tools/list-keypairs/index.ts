@@ -12,6 +12,7 @@ import {
 export function listKeyPairsTool(server: McpServer) {
   server.tool(
     "listKeyPairs",
+    "AWS EC2 키 페어 목록을 조회합니다",
     {
       region: z.string().optional(),
     },
